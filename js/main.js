@@ -68,32 +68,35 @@ jQuery(document).ready(function($) {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
 
-    // // Wrap every letter in a span
+    // // // Wrap every letter in a span
 
-    document.body.classList.add('js-loading');
+    // document.body.classList.add('js-loading');
 
-    window.addEventListener("load", showPage, false);
+    // window.addEventListener("load", showPage, false);
 
-    function showPage() {
-        document.body.classList.remove('js-loading');
-    }
-    $('#move').each(function() {
-        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-    });
+    // function showPage() {
+    //     document.body.classList.remove('js-loading');
+    // }
+    // $('#move').each(function() {
+    //     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    // });
 
-    anime.timeline({})
-        .add({
-            targets: '#move .letter',
-            translateX: [40, 0],
-            translateZ: 0,
-            opacity: [0, 1],
-            easing: "easeInExpo",
-            duration: 1,
-            delay: function(el, i) {
-                return 500 + 30 * i;
-            }
-        })
+    // anime.timeline({})
+    //     .add({
+    //         targets: '#move .letter',
+    //         translateX: [40, 0],
+    //         translateZ: 0,
+    //         opacity: [0, 1],
+    //         easing: "easeInExpo",
+    //         duration: 1,
+    //         delay: function(el, i) {
+    //             return 500 + 30 * i;
+    //         }
+    //     })
 
+    // $('html, body').animate({
+    //     scrollTop: target.offset().top - top_space
+    // }, 1500, 'easeInOutExpo');
 
     // Smooth scroll on page hash links
     $('a[href*="#"]:not([href="#"])').on('click', function() {

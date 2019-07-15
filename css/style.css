@@ -1,24 +1,17 @@
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-    animation-play-state: paused !important;
-}
-
 body {
-    background: #fff;
-    color: #666666;
+    /* background: #fff; */
+    background: url("../img/geometric.jpg");
+    /* color: #666666; */
     font-family: "Open Sans", sans-serif;
 }
 
 a {
-    /* color: #2dc997; */
     color: #333333;
 }
 
 a:hover,
 a:active,
 a:focus {
-    /* color: #2dca98; */
     color: rgb(191, 157, 245, 0.77);
     outline: none;
     text-decoration: none;
@@ -42,18 +35,19 @@ h6 {
 }
 
 
-/* Prelaoder */
+/* Preloader */
 
-#preloader {
-    position: fixed;
+
+/* #preloader {
+    position: static;
     left: 0;
     top: 0;
     z-index: 999;
     width: 100%;
     height: 100%;
     overflow: visible;
-    background: #fff url("../img/geometric.jpg") no-repeat center center;
-}
+    background: #fff, url("../img/geometric.jpg") no-repeat center center;
+} */
 
 
 /* Back to top button */
@@ -84,7 +78,6 @@ h6 {
 }
 
 .back-to-top:hover {
-    /* background: #2dc997; */
     background: rgb(191, 157, 245, 0.77);
     color: #fff;
 }
@@ -116,7 +109,7 @@ Header */
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #fff;
 }
 
@@ -149,7 +142,8 @@ Header */
 
 /* # Hero Section */
 
-#move {
+
+/* #move {
     font-weight: 200;
     font-size: 1.8em;
     text-transform: uppercase;
@@ -159,7 +153,13 @@ Header */
 #move .letter {
     display: inline-block;
     line-height: 1em;
-}
+} */
+
+
+/* 
+div.hero-container {
+    position: fixed;
+} */
 
 #hero {
     width: 100%;
@@ -167,6 +167,7 @@ Header */
     background: url(../img/geometric.jpg) top center;
     background-size: cover;
     position: relative;
+    /* -webkit-transform: translate3d(0, 0, 0); */
 }
 
 @media (min-width: 1024px) {
@@ -175,8 +176,7 @@ Header */
     }
 }
 
-#hero:before,
-#move:before {
+#hero:before {
     content: "";
     background: rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -186,8 +186,8 @@ Header */
     right: 0;
     /* background-image: url(../img/geometric.jpg);
     background-position: 0px 0px;
-    background-repeat: repeat-x; */
-    /* background-size: 60% 100%; */
+    background-repeat: repeat-x;
+    background-size: 60% 100%; */
     /* animation: animatedBackground 60s alternate infinite;  */
 }
 
@@ -257,12 +257,20 @@ Header */
     margin: 10px;
     border: 2px solid #fff;
     color: #fff;
+    /* -webkit-transform-style: preserve-3d; */
 }
 
 #hero .btn-get-started:hover {
     /* background: #2dc997;  */
     background: rgb(191, 157, 245, 0.77);
     border: 2px solid rgb(191, 157, 245, 0.77);
+}
+
+.fadeinRightBig,
+.animated {
+    animation-duration: 2s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
 }
 
 
@@ -568,7 +576,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #333;
     font-weight: 700;
     font-size: 32px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 @media (max-width: 768px) {
