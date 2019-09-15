@@ -3,7 +3,6 @@
 
 /***************** Configuration *****************/
 
-  // Replace with your real receiving email address
   $contact_email_to = "kiki@kikimueller.com";
 
   // Title prefixes
