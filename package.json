@@ -1,0 +1,23 @@
+{
+  "name": "kiki-mueller",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamueller2/kiki-mueller.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamueller2/kiki-mueller/issues"
+  },
+  "homepage": "https://github.com/kamueller2/kiki-mueller#readme"
+}
