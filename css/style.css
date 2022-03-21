@@ -35,7 +35,17 @@ h6 {
     padding: 0;
 }
 
+p {
+    font-family: darkmode-on,sans-serif;
+    font-size: 0.8em;
 
+}
+/*scroll*/
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+   } 
+  
 
 /* Back to top button */
 
@@ -155,6 +165,7 @@ div.hero-container {
     background: url(../img/backgrounds/hero.jpg) top center;
     background-size: cover;
     position: relative;
+    opacity: 65%;
     /* -webkit-transform: translate3d(0, 0, 0); */
 }
 
@@ -172,22 +183,7 @@ div.hero-container {
     top: 0;
     left: 0;
     right: 0;
-    /* background-image: url(../img/geometric.jpg);
-    background-position: 0px 0px;
-    background-repeat: repeat-x;
-    background-size: 60% 100%; */
-    /* animation: animatedBackground 60s alternate infinite;  */
 }
-
-
-/* @keyframes animatedBackground {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 100% 0;
-    }
-} */
 
 #hero .hero-container {
     position: absolute;
@@ -205,10 +201,22 @@ div.hero-container {
 #hero h1 {
     margin: 30px 0 10px 0;
     font-size: 48px;
-    font-weight: 700;
     line-height: 56px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: #fff;
+    font-family: darkmode-on,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 100px;
+}
+
+h2,
+h3 {
+    font-family: darkmode-on,sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    padding-bottom: 50px;   
+    text-transform: lowercase;
 }
 
 @media (max-width: 768px) {
@@ -236,14 +244,14 @@ div.hero-container {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 8px 28px;
-    border-radius: 50px;
+    padding: 4px 20px;
+    /* border-radius: 20px; */
     transition: 0.5s;
     margin: 10px;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     color: #fff;
     /* -webkit-transform-style: preserve-3d; */
 }
@@ -533,17 +541,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header */
 
 .section-header .section-title {
-    font-size: 32px;
+    font-family: darkmode-on,sans-serif;
+    font-size: 30px;
     color: #111;
-    text-transform: uppercase;
     text-align: center;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 5px;
 }
 
 .section-header .section-description {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: #999;
 }
 
@@ -552,7 +560,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about {
     background: #fff;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 #about .about-container .background {
@@ -569,9 +577,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .title {
     color: #333;
-    font-weight: 700;
-    font-size: 32px;
-    /* text-transform: uppercase; */
+    font-size: 30px;
+    text-transform: lowercase; 
 }
 
 @media (max-width: 768px) {
@@ -656,10 +663,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #facts .counters p {
-    padding: 0;
+    padding: 8px;
     margin: 0 0 20px 0;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
+    text-align: center;
 }
 
 
