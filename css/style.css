@@ -36,16 +36,18 @@ h6 {
 }
 
 p {
-    font-family: darkmode-on,sans-serif;
+    font-family: darkmode-on, sans-serif;
     font-size: 0.8em;
-
 }
+
+
 /*scroll*/
+
 ::-webkit-scrollbar {
-    width: 0px; 
+    width: 0px;
     background: transparent;
-   } 
-  
+}
+
 
 /* Back to top button */
 
@@ -204,7 +206,7 @@ div.hero-container {
     line-height: 56px;
     text-transform: lowercase;
     color: #fff;
-    font-family: darkmode-on,sans-serif;
+    font-family: darkmode-on, sans-serif;
     font-weight: 300;
     font-style: normal;
     padding-bottom: 100px;
@@ -212,10 +214,10 @@ div.hero-container {
 
 h2,
 h3 {
-    font-family: darkmode-on,sans-serif;
+    font-family: darkmode-on, sans-serif;
     font-weight: lighter;
     font-style: normal;
-    padding-bottom: 50px;   
+    padding-bottom: 50px;
     text-transform: lowercase;
 }
 
@@ -541,7 +543,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header */
 
 .section-header .section-title {
-    font-family: darkmode-on,sans-serif;
+    font-family: darkmode-on, sans-serif;
     font-size: 30px;
     color: #111;
     text-align: center;
@@ -578,7 +580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-container .title {
     color: #333;
     font-size: 30px;
-    text-transform: lowercase; 
+    text-transform: lowercase;
 }
 
 @media (max-width: 768px) {
@@ -730,7 +732,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .box:hover .icon a {
     /* color: #C560FF; */
     color: #9e9694;
-
 }
 
 #services .title {
